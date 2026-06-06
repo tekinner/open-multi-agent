@@ -114,6 +114,25 @@ export { InMemoryStore } from './memory/store.js'
 export { SharedMemory } from './memory/shared.js'
 
 // ---------------------------------------------------------------------------
+// MCP (Model Context Protocol) integration
+// ---------------------------------------------------------------------------
+
+export { MCPClient, createMCPTools } from './mcp/index.js'
+export type {
+  MCPClientOptions,
+  MCPTool,
+  MCPContentBlock,
+  MCPCallToolResult,
+} from './mcp/index.js'
+
+export {
+  ROBINHOOD_MCP_URL,
+  createRobinhoodMCPClient,
+  createRobinhoodTradingTools,
+} from './mcp/index.js'
+export type { RobinhoodMCPOptions } from './mcp/index.js'
+
+// ---------------------------------------------------------------------------
 // Types — all public interfaces re-exported for consumer type-checking
 // ---------------------------------------------------------------------------
 
